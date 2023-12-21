@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+            transition-duration: 0.4s;
+            cursor: pointer;
+            background-color: green;
+            color: black;
+            width: 250px;
+            height: 80px;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 24px;
+        }
+        button:hover {
+            background-color: white;
+            color: green;
+        }
+        .button-container {
+            height: 250px;
+            position: relative;
+            margin-top: 200px;
+            margin-bottom: 10px;
+        }
+        .button-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <h1>New or Existing User?</h1>
+        <div class="button-center">
+            <a href="newUserCheckout.php"><button>New</button></a>
+            <a href="existingUserCheckout.php"><button>Existing</button></a>
+        </div>
+    </div>
+</body>
+</html>

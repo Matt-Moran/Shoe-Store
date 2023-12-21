@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .login {
+            background-color: green;
+        }
+
+        .return {
+            background-color: darkgrey;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .login_img_container {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .login_container {
+            padding: 16px;
+            width: 50%;
+            margin: 10% auto auto auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="login_container">
+        <form action="employeeloginprocess.php" method="post">
+            <div class="login_img_container">
+                <img src="../assets/briefcase.png" alt="ShoeHub Logo" class="avatar">
+            </div>
+            <label for="username"><b>Employee ID</b></label>
+            <input type="text" placeholder="Enter Employee ID" name="eid" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            
+            <button type="submit" class="login">Login</button>
+        </form>
+        <a href="index.html"><button class="return">Back to Main Page</button></a>
+    </div>
+</body>
+</html>

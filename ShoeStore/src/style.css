@@ -1,0 +1,92 @@
+h1, h2, h3  {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.logo1 {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.logo2 {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    transform: rotateY(180deg);
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+.navbar {
+    border: 1px solid black;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    text-align: center;
+    display: block;
+    padding: 25px 20px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    gap: 40px 10px;
+    padding: 10px;
+    width: 80%;
+}
+  
+.box img {
+    width: 100%;
+    height: 80%;
+}
+
+.box p {
+    text-align: center;
+}
+
+.subpage_container {
+    width: 80%;
+    margin: auto;
+    line-height: 2.0;
+    font-size: 18pt;
+}
+
+th, td {
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
